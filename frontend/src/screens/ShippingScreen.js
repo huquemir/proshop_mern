@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Form, Button } from 'react-bootstrap'
+import { Form, Button, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import FormContainer from '../components/FormContainer'
 import CheckoutSteps from '../components/CheckoutSteps'
@@ -13,12 +13,13 @@ const ShippingScreen = ({ history }) => {
   const [city, setCity] = useState(shippingAddress.city)
   const [postalCode, setPostalCode] = useState(shippingAddress.postalCode)
   const [country, setCountry] = useState(shippingAddress.country)
+  const [shipMethod, setShipMethod] = useState(shippingAddress.shipMethod)
 
   const dispatch = useDispatch()
 
   const submitHandler = (e) => {
     e.preventDefault()
-    dispatch(saveShippingAddress({ address, city, postalCode, country }))
+    dispatch(saveShippingAddress({ address, city, postalCode, country, shipMethod }))
     history.push('/payment')
   }
 
@@ -69,6 +70,28 @@ const ShippingScreen = ({ history }) => {
             required
             onChange={(e) => setCountry(e.target.value)}
           ></Form.Control>
+        </Form.Group>
+
+        <Form.Group>
+          <Form.Label as='ship-method'>Shipping Method</Form.Label>
+          <Col>
+            <Form.Check
+              type='radio'
+              label='Standard (5-7 Business Days)'
+              id='shipping'
+              name='shippingMethod'
+              value='Standards'
+              onChange={(e) => setShipMethod(e.target.value)}
+            ></Form.Check>
+            { <Form.Check
+              type='radio'
+              label='Fast Shipping (1-2 Business Days)'
+              id='fastshipping'
+              name='shippingMethod'
+              value='fastship'
+              onChange={(e) => setShipMethod(e.target.value)}
+            ></Form.Check> }
+          </Col>
         </Form.Group>
 
         <Button type='submit' variant='primary'>
