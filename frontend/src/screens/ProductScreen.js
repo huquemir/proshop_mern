@@ -195,9 +195,9 @@ const ProductScreen = ({ history, match }) => {
                           as='textarea'
                           row='3'
                           value={comment}
-                          onChange={(e) => setComment(e.target.value)}
+                          //onChange={(e) => setComment(e.target.value)}
                         ></Form.Control>
-                      </Form.Group>
+                      </Form.Group> 
                       <Button
                         disabled={loadingProductReview}
                         type='submit'

@@ -11,6 +11,8 @@ const ContactScreen = () => {
        <label>
          <p>Name</p>
          <input name="name" />
+         <p>Email</p>
+         <input name="email" />
        </label>
      </fieldset>
      <button type="submit">Submit</button>
