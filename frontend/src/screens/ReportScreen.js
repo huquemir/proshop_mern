@@ -37,38 +37,38 @@ const ReportScreen = () => {
 <table>
   <tr>
     <th>Products</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>Sales</th>
+    <th>Profit</th>
   </tr>
   <tr>
-    <td>iphone</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td>IPHONE 11 PRO 256GB MEMORY</td>
+    <td>150</td>
+    <td>$500000</td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+    <td>LOGITECH G-SERIES GAMING MOUSE</td>
+    <td>200</td>
+    <td>$30000</td>
   </tr>
   <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
+    <td>AIRPODS WIRELESS BLUETOOTH HEADPHONES</td>
+    <td>150</td>
+    <td>$80000</td>
   </tr>
   <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
+    <td>AMAZON ECHO DOT 3RD GENERATION</td>
+    <td>130</td>
+    <td>$60000</td>
   </tr>
   <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
+    <td>SONY PLAYSTATION 4 PRO WHITE VERSION</td>
+    <td>50</td>
+    <td>$30000</td>
   </tr>
   <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
+    <td>CANNON EOS 80D DSLR CAMERA</td>
+    <td>20</td>
+    <td>$15000</td>
   </tr>
 </table>
           <br></br>
