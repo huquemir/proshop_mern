@@ -36,12 +36,12 @@ const ReportScreen = () => {
 
 <table>
   <tr>
-    <th>Company</th>
+    <th>Products</th>
     <th>Contact</th>
     <th>Country</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
+    <td>iphone</td>
     <td>Maria Anders</td>
     <td>Germany</td>
   </tr>
